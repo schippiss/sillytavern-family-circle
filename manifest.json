@@ -1,0 +1,13 @@
+{
+  "display_name": "Близкие · Family Circle",
+  "loading_order": 110,
+  "requires": [],
+  "optional": [],
+  "js": "index.js",
+  "generate_interceptor": "familyCircleBeforeGenerate",
+  "css": "style.css",
+  "author": "Family Circle contributors",
+  "version": "0.2.0",
+  "description": "Ненавязчивая семейная динамика через текущую модель чата",
+  "auto_update": false
+}

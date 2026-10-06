@@ -1,0 +1,8 @@
+<!doctype html><html lang="ru"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="../style.css"><title>Family Circle — test harness</title><style>body{background:#191820;color:#eee;font:16px system-ui}button{font:inherit}</style><div id="extensionsMenu"></div><script>
+const events = {};
+window.testContext = { chatId:'test', chat:[], chatMetadata:{}, saveMetadataDebounced(){}, setExtensionPrompt(...args){window.testPrompt=args}, eventTypes:{CHAT_CHANGED:'chat',APP_READY:'ready'},eventSource:{on(name,cb){events[name]=cb}} };
+window.SillyTavern={getContext:()=>window.testContext};
+window.testContext.extensionSettings = {};
+window.testContext.saveSettingsDebounced = () => { window.archiveSaved = true; };
+window.testEvents=events;
+</script><script type="module" src="../index.js"></script></html>
